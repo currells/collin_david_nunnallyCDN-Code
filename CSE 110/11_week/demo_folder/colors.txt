@@ -1,0 +1,10 @@
+Titanium White | #FFFFFF | A versatile opaque white pigment used for mixing and creating lighter tones.
+Ivory Black | #000000 | A dense black pigment often used for shading, creating depth, and darkening colors.
+Cadmium Red | #E30022 | A vibrant red pigment with excellent coverage, commonly used for warm tones, landscapes, and flesh tones.
+Cadmium Yellow | #FFEC00 | A bright yellow pigment with high opacity, ideal for creating vibrant yellows, oranges, and greens.
+Ultramarine Blue | #120A8F | A deep blue pigment often used for creating rich skies, oceans, and darker shades when mixed with other colors.
+Viridian Green | #008000 | A cool, transparent green pigment frequently used for landscapes, foliage, and natural scenes.
+Burnt Sienna | #E97451 | A warm brown pigment often used for creating earthy tones, shadows, and adding warmth to paintings.
+Yellow Ochre | #CC7722 | A natural yellow-brown pigment commonly used for depicting earthy colors, landscapes, and creating warmth.
+Raw Umber | #826644 | A dark brown pigment used for shading, creating depth, and adding warmth to paintings.
+Alizarin Crimson | #E32636 | A deep red pigment frequently used for creating rich red tones, purples, and darker shades when mixed with other colors.
