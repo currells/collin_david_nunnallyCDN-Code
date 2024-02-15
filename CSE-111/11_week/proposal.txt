@@ -1,0 +1,29 @@
+CSE 111 Proposal for a Student Chosen Program
+
+    (This is a proposal. All proposals are written with our best
+    knowledge at the beginning of a project. As we progress from the
+    beginning to the end of a project, we gain more knowledge, and we
+    change some of our proposed ideas. This is part of completing any
+    project and is fine.  However, we still must write a proposal so
+    that our teachers or supervisors know what we intend to do. Please
+    answer each of the following questions to the best of your
+    knowledge.)
+
+1. What is the title of your program?
+    md5.py
+
+2. What real-world problem will your program address or help to solve?
+    An issue with Cyber-Security is ensuring the integrity of files that are sent unsecurely. A way to combat this is to send a file and then the hash of the file to make sure that the file was not changed. You can then hash the file and compare it to the hash sent to make sure it is the same file. MD5 is a type of hash that is current and very hard to "fake." 
+3. What will you learn from developing this program?
+    I will learn more about inputing files, writing test programs, and a way that I can take a file and hash it.
+4. What Python modules will your program use?
+    I will use pytest and a module to hash a file (that could outsource it to a website or in python)
+    (Some examples are: csv, datetime, functools, matplotlib, math,
+    pandas, pytest, random, requests, and tkinter.)
+5. Will you separate your Python program into functions that each
+perform a single task?
+    Yes, I believe that I can separate my program into single tasks so they can be tested.
+
+6. Will you write test functions to test at least two of your program
+functions?
+    I would be able to write a test function for at least 2 functions in my program. I could test to see if the input and the output hash are the same and it gives the desired response.
