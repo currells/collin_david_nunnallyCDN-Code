@@ -62,9 +62,12 @@
 /* Activity 3 styles */ 
 .content3 {
   /* This is the parent of the activity 3 boxes. */
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-column-gap: 20px;
 }
 .red3 {
-  width: 100px; 
+  width: 100%; 
   height: 100px; 
   background-color: red; 
 } 
@@ -72,14 +75,16 @@
   width: 100px; 
   height: 100px; 
   background-color: green;
+  grid-column: 1/3;
 } 
 .yellow3 {
   width: 100px; 
   height: 100px; 
   background-color: gold; 
+  grid-column: 1/3;
 } 
 .blue3 {
-  width: 100px;
+  width: 100%;
   height: 100px; 
   background-color: blue; 
 } 
