@@ -1,0 +1,15 @@
+Please respond thoroughly (at least two sentences for each question) to
+the following three questions.
+
+1. Describe an experience you had this semester where you saw the power of
+functions.
+I saw the power of functions when I wrote code for the generation of random sentences. It was cool to see how writing these general functions were powerful enough to do something that I thought would be so complex to do.
+
+
+2. In your judgment, what is the value of test functions?
+The value of a test function is to make sure that the function preforms as it should and that any calculations are made like you think they should. This helps debug bad coding of calculations that the debugger won't normally catch
+
+
+3. Describe your process for troubleshooting and fixing a program that
+has a problem. What is one thing you can do to improve your process?
+The first thing that I do is I try to do some research on the syntax of the code and how I could write it. Another thing that I could do do improve my process is to copy paste more code to avoid troubleshooting more.
