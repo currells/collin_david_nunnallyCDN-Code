@@ -3,6 +3,8 @@ Name: Collin Nunnally
 Class: CSE-111
 Comments:
 Asking for a file, and checking if the md5 hash matches the file
+Good website to hash a file:
+https://emn178.github.io/online-tools/md5_checksum.html
 """
 import tkinter as tk
 from tkinter import filedialog, Frame, Label, Button, Entry # Used to create the widget
@@ -82,11 +84,8 @@ def calculate_md5(filename):
 
 def clear_window():
     global ent_md5_hash
-    global lbl_comparison
-    global btn_open_file # added to global since this variable is in the function
-    btn_clear.focus()
-    ent_md5_hash.clear()
-    btn_open_file.clear()
+    global lbl_comparison  # added to global since this variable is in the function
+    ent_md5_hash.delete(0, tk.END)
     lbl_comparison.config(text="")
     ent_md5_hash.focus()
 
