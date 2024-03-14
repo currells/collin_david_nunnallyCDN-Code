@@ -12,16 +12,16 @@ class Entry
     {
         Prompt = prompt;
         Response = response;
-        Date = DateTime.Now;
+        Date = DateTime.Now; 
     }
 
-    public override string ToString()
+    public override string ToString() //Entry layout
     {
         return $"Date: {Date}\nPrompt: {Prompt}\nResponse: {Response}\n";
-    }
+    } 
 }
 
-class JournalApp
+class JournalApp //This gets the prompts and allows the random generation later in the code
 {
     private List<Entry> journal = new List<Entry>();
     private List<string> prompts = new List<string>()
@@ -46,8 +46,8 @@ class JournalApp
 
             Console.Write("Enter your choice: ");
             string choice = Console.ReadLine();
-
-            switch (choice)
+                
+            switch (choice) // switch / case is like else/elif statements in Python
             {
                 case "1":
                     WriteNewEntry();
@@ -75,11 +75,11 @@ class JournalApp
         Random rnd = new Random();
         string prompt = prompts[rnd.Next(prompts.Count)];
 
-        Console.WriteLine($"Prompt: {prompt}");
+        Console.WriteLine($"Prompt: {prompt}"); //Displays a random prompt using the random in code above
         Console.Write("Your response: ");
         string response = Console.ReadLine();
 
-        Entry newEntry = new Entry(prompt, response);
+        Entry newEntry = new Entry(prompt, response); //Ties the entry and response to the Entry class. Date comes from 'Date = DateTime.Now;'
         journal.Add(newEntry);
         Console.WriteLine("Entry added successfully.");
     }
@@ -89,11 +89,11 @@ class JournalApp
         Console.WriteLine("\n--- Journal Entries ---");
         foreach (var entry in journal)
         {
-            Console.WriteLine(entry);
+            Console.WriteLine(entry); //Displays the entries in Entry
         }
     }
 
-    private void SaveJournal()
+    private void SaveJournal() //Saves all Entry into the file given
     {
         Console.Write("Enter filename to save: ");
         string filename = Console.ReadLine();
@@ -116,7 +116,7 @@ class JournalApp
         }
     }
 
-    private void LoadJournal()
+    private void LoadJournal() //Loads a file 
     {
         Console.Write("Enter filename to load: ");
         string filename = Console.ReadLine();
@@ -149,7 +149,7 @@ class JournalApp
     }
 }
 
-class Program
+class Program //Runs the Journal app, which is the 'Main'
 {
     static void Main(string[] args)
     {
