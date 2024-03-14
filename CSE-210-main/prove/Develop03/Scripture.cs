@@ -1,6 +1,9 @@
 public class Scripture
 {
-    private string _referenceCDN;
-    private string _passageCDN;
-    
+    public string Verse { get; set; }
+
+    public Scripture(string verse)
+    {
+        Verse = verse;
+    }
 }
