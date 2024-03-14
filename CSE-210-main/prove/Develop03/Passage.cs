@@ -1,5 +1,5 @@
 public class Passage
 {
-    private words:list<word>;
+    private words:List<word>;
 
 }
