@@ -1,0 +1,323 @@
+/* 
+Heading Font: 'Franklin Gothic Medium'
+Paragraph Font: 'Gill Sans'
+
+"primary">[#FFBC42] Yellow
+"secondary">[#E9F1F7] White
+"accent1">[#8F2D56] Purple
+"accent2">[#222725] Black
+*/
+  
+nav a {
+    text-align: center;
+    color: #E9F1F7;
+    font-family:'Gill Sans';
+    text-decoration: solid;
+    padding: 35px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a:hover {
+    color: #FFBC42;
+}
+
+body {
+    background-color: #fcfbfb;
+    font-family: 'Gill Sans';
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.main-title {
+    color: #222725;
+    font-family:'Franklin Gothic Medium';
+    font-size: 2em;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.rates-title {
+    color: black;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 2em;
+    margin-top: 10px;
+    text-align: center;
+}
+
+header {
+    background-color: #222725;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+footer {
+    background-color: #8F2D56;
+    color: black;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    align-items: right;
+    display: grid;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.linkedin-img {
+    max-width:24%;  
+    height: auto;  
+}
+
+mail-img {
+    max-width:30%;  
+    height: auto;  
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+.home-grid > div {
+    display: flex;
+    align-items:first baseline;
+}
+
+.myself-img {
+    grid-column: 1/2;
+    max-width:80%;  
+    height: auto;  
+}
+
+.meadow-hike-img {
+    grid-column: 1/2;
+    max-width:80%; 
+    height: auto;
+}
+
+.home-body {
+    font-size: 1.2em;
+    font-family: 'Gill Sans';
+    color: #222725;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    text-align: left;
+}
+
+.resume-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto ;
+
+}
+
+.resume-grid > div {
+    display: flex;
+    align-items: first baseline;
+    flex-direction: column;
+}
+
+.og-img {
+    grid-row: 1/2;
+    grid-column: 2/2;
+    max-width: 80%;  
+    height: auto;
+}
+
+.smashburger-img {
+    grid-row: 2/2;
+    grid-column:2/2;
+    max-width: 80%;  
+    height: auto;
+}
+
+.resume-body {
+    font-size: 1em;
+    color: #222725;
+    font-family: 'Gill Sans';
+    /* background-color: #8F2D56; */
+    grid-column: 1/2;
+    grid-row: 1 / span 2;
+    padding: 50px;
+    text-align: left;
+    overflow-y: auto;
+    height: 600px;
+    overflow: auto;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+ .project-grid > div {
+    display: flex;
+    align-items: first baseline;
+    flex-direction: column;
+} 
+
+.rubber-duck-img {
+    grid-column: 1/2;
+    grid-row: 2/2;
+    max-width: 80%;  
+    height: auto;
+}
+
+.python-img {
+    grid-column:2/2;
+    grid-row: 2/2;
+    max-width: 80%;  
+    height: auto;
+}
+
+.project-body {
+    grid-column: 1 / span 2;
+    grid-row: 1/2;
+    font-size: 1em;
+    color: #222725;
+    font-family: 'Gill Sans';
+    /* background-color: #8F2D56; */
+    padding: 10px;
+    text-align: left;
+}
+
+
+/* Update the elements :) */
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    #hero-msg h1 {
+        color: #6f7364;
+    }
+    .home-title {
+        font-size: 25px;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+    #feedback {
+        background-color: antiquewhite;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: .5em;
+        /* make this element invisible until we are ready for it */
+        display: none;      
+    }
+    .moveDown {
+        margin-top: 3em;
+    }
+    form {
+        /* Just to center the form on the page */
+        margin: 0 auto;
+        width: 400px;
+      
+        /* To see the limits of the form */
+        padding: 1em;
+        border: 1px solid #ccc;
+        border-radius: 1em;
+      }
+      
+      div + div {
+        margin-top: 1em;
+      }
+      
+      label {
+        /* To make sure that all label have the same size and are properly align */
+        display: inline-block;
+        width: 90px;
+        text-align: right;
+      }
+      
+      input,
+      textarea {
+        /* To make sure that all text field have the same font settings
+           By default, textarea are set with a monospace font */
+        font: 1em sans-serif;
+      
+        /* To give the same size to all text field */
+        width: 300px;
+      
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      
+        /* To harmonize the look & feel of text field border */
+        border: 1px solid #999;
+      }
+      
+      input:focus,
+      textarea:focus {
+        /* To give a little highlight on active elements */
+        border-color: #000;
+      }
+      
+      textarea {
+        /* To properly align multiline text field with their label */
+        vertical-align: top;
+      
+        /* To give enough room to type some text */
+        height: 5em;
+      
+        /* To allow users to resize any textarea vertically
+           It works only on Chrome, Firefox and Safari */
+        resize: vertical;
+      }
+      
+      .button {
+        /* To position the buttons to the same position of the text fields */
+        padding-left: 90px; /* same size as the label elements */
+      }
+      
+      button {
+        /* This extra margin represent the same space as the space between
+           the labels and their text fields */
+        margin-left: 0.5em;
+      }    
+}
