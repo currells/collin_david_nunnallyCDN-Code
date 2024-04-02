@@ -1,0 +1,16 @@
+public class MathAssignment : Assignment
+    {
+        private string _textbookSectionCDN;
+        private string _problemsCDN;
+
+        public MathAssignment(string student_name, string topic, string textbook_section, string problems) : base(student_name, topic)
+        {
+            _textbookSectionCDN = textbook_section;
+            _problemsCDN = problems;
+        }
+
+        public string GetHomeworkList()
+        {
+            return $"Section {_textbookSectionCDN} Problems {_problemsCDN}";
+        }
+    }
