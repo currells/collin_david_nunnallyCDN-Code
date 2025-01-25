@@ -33,6 +33,9 @@ h1,header,footer, #menu-list {
 h2, h1, #menu-list {
     text-align: center;
 }
+h2, footer {
+    color: var(--text-light);
+}
 
 #menu-list, h1 {
     color: var(--text-light);
@@ -44,6 +47,7 @@ body {
   font-family: var(--primary-font);
   font-size: 1.2em;
   color: var(--text-dark);
+  background-color: var(--text-dark);
 }
 
 a:link,
