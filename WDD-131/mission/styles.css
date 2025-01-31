@@ -9,7 +9,7 @@ body {
     background-color: #fff;
 }
 
-body.dark {
+.dark {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
@@ -18,9 +18,19 @@ body.dark {
     align-items: center;
     min-height: 100vh;
     background-color: #333;
+    color: #fff;
 }
 
 .statement {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dark.statement {
+    filter: invert(100%);
     text-align: center;
     max-width: 600px;
     padding: 20px;
