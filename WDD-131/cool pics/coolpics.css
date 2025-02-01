@@ -11,18 +11,27 @@
 }
 
 @media screen and (min-width: 700px) {
-    .gallery {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #menu-list {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1000px) {
-    .gallery {
-      grid-template-columns: repeat(3, 1fr);
-    }
-    #menu-list {
-        display: none;
-    }
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  button { display: none; }
+  #menu-list {
+    display: block;
+    margin: 0 auto;
+  }
+  #menu-list li {
+      display: inline-block;
+      padding: 20px;
+  }
 }
 
 h1,header,footer, #menu-list {
