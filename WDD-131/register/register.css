@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: auto;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #ff7700; /* Orange */
+}
+
+/* Form Container */
+#formContainer {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Fieldsets */
+fieldset {
+    border: 2px solid #0056b3; /* Dark Blue */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #e8f0ff; /* Light Blue */
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #0056b3;
+    border-radius: 4px;
+}
+
+/* Buttons */
+button {
+    background-color: #ff7700; /* Orange */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #cc5c00; /* Darker Orange */
+}
+
+/* Participants Grid */
+.participants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* Add Button Style */
+#addParticipant {
+    grid-column: span 2;
+    background-color: #0056b3; /* Blue */
+}
+
+#addParticipant:hover {
+    background-color: #003d80; /* Darker Blue */
+}
+
+/* Success Message */
+#summary {
+    text-align: center;
+    font-size: 1.2em;
+    background: #ff7700;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hide Form */
+.hide {
+    display: none;
+}
